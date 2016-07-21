@@ -1,0 +1,554 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+/********************************************
+             Global Styles
+********************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+}
+/* centered columns styles */
+
+.row-centered {
+    text-align: center;
+    margin-right: 0;
+}
+
+.col-centered {
+    display: inline-block;
+    float: none;
+    /* reset the text-align */
+    
+    text-align: left;
+    /* inline-block space fix */
+    
+    margin-right: -4px;
+}
+/********************************************
+             LOADING SCREEN
+********************************************/
+
+.loading_screen {
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    background-color: #50b8d4;
+    color: white;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 4;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.loading_screen .fixed_div {
+    text-align: center;
+}
+
+.loading_screen .fixed_div p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+/********************************************
+               PARALLAX PLUG IN
+********************************************/
+
+.parallax-window {
+    min-height: 1250px;
+    background: transparent;
+    /*  background-size:cover; */
+}
+/********************************************
+                HEADER
+********************************************/
+
+header {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 1);
+    transition: all 0.3s;
+    z-index: 1;
+}
+
+.avatar object,
+.avatar img {
+    width: 60px;
+    height: 95px;
+    margin: 8px 70px;
+    opacity: 0.95;
+}
+
+a.svg {
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+}
+
+a.svg:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.nav_container {
+    text-align: right;
+    position: relative;
+    bottom: 84px;
+    right: 98px;
+}
+
+.nav_container ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.nav_container li {
+    display: inline;
+    margin: 15px;
+}
+
+.nav_container li a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #50b8d4;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.nav_container li a:hover {
+    border-bottom: 2px solid #50b8d4;
+    color: #E56250;
+    text-decoration: none;
+}
+/**************************
+      SIDE BAR
+**************************/
+
+.side_bar {
+    display: none;
+    text-align: right;
+    position: relative;
+    bottom: 95px;
+    right: 24px;
+    color: rgb(80, 180, 208);
+}
+
+.side_bar:hover {
+    color: #DD7B6E;
+}
+
+.side_bar:active,
+.side_bar:focus {
+    color: rgb(80, 180, 208);
+}
+/********************************************
+              CENTRAL CONTENT
+********************************************/
+
+.central_content {
+    height: 800px;
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.central_content p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: #50b8d4;
+    font-size: 52px;
+    text-align: left;
+    margin-left: 77px;
+}
+/*******************************************
+                ABOUT PAGE
+*******************************************/
+
+#about_me .container {
+    width: 100%;
+}
+
+.about_me {
+    background-color: #50B8D4;
+}
+
+.first_p {
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+
+.others_p {
+    color: white;
+    text-align: left;
+    line-height: 45px;
+    margin-top: 50px;
+    font-size: 22px;
+    font-weight: 100;
+}
+
+.what_i_love {
+    text-align: center;
+    padding: 45px 11px;
+    padding-bottom: 100px;
+}
+
+.what_i_love p {
+    color: #58BBD6;
+    text-align: center;
+    margin-left: inherit;
+}
+
+.what_i_love ul {
+    display: inline-block;
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.what_i_love ul li {
+    display: inline;
+}
+/********************************************
+                SKILLS PAGE
+********************************************/
+/*New progress bar*/
+
+.progress_bar .ui-progressbar-value {
+    height: 100%;
+    border-radius: 6px;
+    left: 50%;
+    top: 1px;
+    font-weight: 300;
+    font-size: 12px;
+    text-align: right;
+    color: rgb(255, 255, 255);
+    padding-right: 12px;
+}
+
+.progress_bar {
+    position: relative;
+    height: 18px;
+    border-radius: 6px;
+    background-color: rgb(245, 245, 245);
+}
+
+.my_skills {
+    background-color: white;
+}
+
+.my_skills h4 {
+    text-align: left;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.skills_first_p {
+    text-align: center;
+    color: #50B8D4;
+    font-size: 33px;
+    padding-top: 60px;
+}
+
+.skills_other_p {
+    width: 100%;
+    color: #50B8D4;
+    text-align: center;
+    line-height: 45px;
+    margin-top: 10px;
+    font-size: 18px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.my_skills .row {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.my_skills .container-fluid {
+    padding: 73px 242px;
+}
+
+.cv_button a {
+    margin: 40px 0;
+    padding: 17px 40px;
+    border: 2px solid #58BBD6;
+    border-radius: 30px;
+    background-color: transparent;
+    color: #58BBD6;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.cv_button a {
+    text-decoration: none;
+}
+
+.cv_button a:hover {
+    background-color: #58BBD6;
+    color: white;
+}
+
+.cv_button {
+    position: relative;
+    text-align: center;
+    margin-top: -22px;
+    margin-bottom: 50px;
+}
+/********************************************
+                MY WORKS PAGE
+********************************************/
+
+.my_work {
+    background-color: #50B8D4;
+}
+
+.my_work .works_first_p {
+    text-align: center;
+    color: white;
+    font-size: 33px;
+    padding: 60px 0;
+}
+
+.my_work .works_other_p {
+    width: 100%;
+    color: white;
+    text-align: center;
+    line-height: 45px;
+    margin-top: 10px;
+    font-size: 18px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.work_description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(19, 78, 117, 0.9);
+    height: 100%;
+    width: 100%;
+}
+
+.work_description span {
+    text-align: center;
+    display: block;
+    margin: 25% auto;
+    color: white;
+    font-size: 28px;
+}
+
+.my_work .work_image {
+    background-color: white;
+}
+
+.work_image .last_p {
+    font-size: 18px;
+}
+
+.work_image ul li {
+    list-style-type: none;
+    transition: 1s;
+}
+
+.work_image .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.work_image .row .col-md-4 {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 0;
+}
+
+.work_image img {
+    width: 100%;
+}
+
+.work_image .work_description {
+    display: none;
+}
+
+.work_image li:hover .work_description {
+    display: block;
+}
+/********************************************
+                HIRE ME PAGE
+********************************************/
+
+.my_contacts {
+    background-color: #50b8d4;
+    color: white;
+    width: 100%;
+    /*    height: 200px;*/
+    
+    text-align: center;
+    margin-top: -1px;
+}
+
+.my_contacts .contacts_first_p {
+    text-align: center;
+    color: white;
+    font-size: 33px;
+    padding: 60px 0;
+}
+
+.my_contacts .contacts_other_p {
+    width: 100%;
+    color: white;
+    text-align: center;
+    line-height: 45px;
+    margin-top: 10px;
+    font-size: 18px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.hire_me {
+    color: rgba(80, 184, 212, 0.93);
+    ;
+    font-size: 57px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    width: 10%;
+    height: 1000px;
+    display: table-cell;
+}
+
+.hire_me p {
+    margin-top: 60px;
+}
+
+.hire_me button {
+    padding: 17px 40px;
+    border: 2px solid rgba(80, 184, 212, 0.93);
+    ;
+    border-radius: 30px;
+    background-color: transparent;
+    color: rgba(80, 184, 212, 0.93);
+    ;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hire_me button a {
+    text-decoration: none;
+}
+
+.hire_me button:hover {
+    background-color: rgba(80, 184, 212, 0.93);
+    ;
+    color: white;
+}
+/********************************************
+               CONTACT PAGE
+********************************************/
+
+.social_media {
+    background-color: #ffffff;
+}
+
+.form {
+    width: 100%;
+    height: 500px;
+    background-color: #F7F7F7;
+}
+/********************************************
+                   FOOTER
+********************************************/
+
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: #50b8d4;
+    margin-top: 5px;
+}
+
+.footer_div {
+    width: 100%;
+    height: 10px;
+}
+
+footer p {
+    width: 100%;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 21px;
+}
+
+.social_icons {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    transition: 2s;
+}
+
+.social_icons ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.social_icons li {
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.social_icons li a {
+    text-decoration: none;
+}
+/********************************************
+           SIDR - LATERAL PLUG IN
+********************************************/
+
+.sidr {
+    background-color: #4DB0CB;
+    -webkit-box-shadow: #4DB0CB;
+    box-shadow: none;
+    border: none;
+}
+
+.sidr ul {
+    border-top: none;
+    border-bottom: none;
+}
+
+.sidr ul li {
+    border-bottom: 1px solid rgb(46, 142, 168);
+    border-top: none;
+}
+
+.sidr ul li a {
+    color: white;
+}
+
+.sidr ul li a:hover {
+    background-color: white;
+    color: #4DB0CB;
+    box-shadow: none;
+}

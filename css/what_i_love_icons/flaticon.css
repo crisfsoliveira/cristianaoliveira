@@ -1,0 +1,97 @@
+@font-face {
+    font-family: "Flaticon";
+    src: url("flaticon.eot");
+    src: url("flaticon.eot#iefix") format("embedded-opentype"), url("flaticon.woff") format("woff"), url("flaticon.ttf") format("truetype"), url("flaticon.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*=" flaticon-"]:after {
+    font-family: Flaticon;
+    font-size: 40px;
+    font-style: normal;
+    margin-left: 10px;
+    color: rgba(19, 78, 117, 0.8);
+}
+
+.flaticon-airplane68:before {
+    content: "\e000";
+}
+
+.flaticon-camera89:before {
+    content: "\e001";
+}
+
+.flaticon-cat19:before {
+    content: "\e002";
+}
+
+.flaticon-code26:before {
+    content: "\e003";
+}
+
+.flaticon-favorite21:before {
+    content: "\e004";
+    font-size: 80px;
+    color: rgba(19, 78, 117, 0.8);
+}
+
+.flaticon-github10:before {
+    content: "\e005";
+    color: white;
+    font-size: 50px;
+}
+
+.flaticon-group58:before {
+    content: "\e006";
+}
+
+.flaticon-gym16:before {
+    content: "\e007";
+}
+
+.flaticon-instagram19:before {
+    content: "\e008";
+    color: white;
+    font-size: 50px;
+}
+
+.flaticon-linkedin1:before {
+    content: "\e009";
+    color: white;
+    font-size: 50px;
+}
+
+.flaticon-pinterest11:before {
+    content: "\e00a";
+    color: white;
+    font-size: 50px;
+}
+
+.flaticon-popcorn6:before {
+    content: "\e00b";
+}
+
+.flaticon-quaver11:before {
+    content: "\e00c";
+}
+/******************************
+            HOVER
+******************************/
+
+.what_i_love a:hover {
+    text-decoration: none;
+}
+
+.what_i_love a:hover i:before {
+    color: #e56250;
+    text-decoration: none;
+}
+
+.social_icons a:hover i:before {
+    color: #e56250;
+    text-decoration: none;
+}

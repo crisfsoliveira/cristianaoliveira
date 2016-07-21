@@ -1,0 +1,99 @@
+/*********************************************
+    Small devices (TABLETS, 768px and up) 
+*********************************************/
+
+@media (max-width: 992px) {
+    /***********************************
+            WHAT I LOVE PAGE
+    ***********************************/
+    
+    .what_i_love ul li {
+        margin: 0;
+        display: inherit;
+        margin-top: 23px;
+    }
+    .col-centered {
+        float: left;
+        text-align: center;
+        margin-right: 0;
+    }
+    .flaticon-favorite21:before {
+        font-size: 34px;
+    }
+    .cv_button a {
+        margin: 40px;
+    }
+}
+/******************************************
+    Small devices (PHONES, up to 768px) 
+******************************************/
+
+@media (max-width: 768px) {
+    /***********************************
+            VIEW PORT PAGE
+    ***********************************/
+    
+    .avatar object,
+    .avatar img {
+        margin: 8px 20px;
+    }
+    .central_content p {
+        font-size: 32px;
+        margin: 0 26px;
+    }
+    /***********************************
+                NAV BAR
+    ***********************************/
+    
+    header {
+        height: 64px;
+    }
+    .nav_container ul {
+        display: none;
+    }
+    .avatar object,
+    .avatar img {
+        height: 74px;
+    }
+    .side_bar {
+        display: block;
+        bottom: 84px;
+    }
+    /***********************************
+                ABOUT PAGE
+    ***********************************/
+    
+    .first_p {
+        margin: 41px 26px;
+    }
+    .what_i_love ul li {
+        display: block;
+    }
+    .cv_button a {
+        margin: 40px;
+    }
+    /***********************************
+                MY SKILLS PAGE 
+    ***********************************/
+    
+    .my_skills .container-fluid {
+        padding: 42px;
+    }
+    .col_fix {
+        margin-bottom: 25px;
+    }
+    .my_skills .row {
+        margin-bottom: 0;
+    }
+    .skills_other_p p {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    /***********************************
+                CONTACT PAGE 
+    ***********************************/
+    
+    .contacts_other_p p {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
